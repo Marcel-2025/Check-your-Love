@@ -22,8 +22,8 @@ SITE = {
     "base_url": "https://marcel-2025.github.io/Check-your-Love/",
     # Google-Play-Eintrag. Leer lassen, solange die App noch nicht veröffentlicht ist.
     "play_url": "",
-    "updated_de": "5. Oktober 2026",
-    "updated_en": "5 October 2026",
+    "updated_de": "18. Oktober 2026",
+    "updated_en": "18 October 2026",
 }
 
 HEART = "M50,88 C50,88 10,62 10,36 C10,22 21,12 33,12 C41,12 47,16 50,22 C53,16 59,12 67,12 C79,12 90,22 90,36 C90,62 50,88 50,88 Z"
@@ -346,7 +346,7 @@ def controller_block(lang):
 def privacy_de():
     return f"""
 <h1>Datenschutzerklärung</h1>
-<p class="meta">für die App „Check your Love“ (Android, Paket dev.flondy.checkyourlove) und diese Website · Stand: {SITE['updated_de']}</p>
+<p class="meta">für die App „Check your Love“ (Android und iOS, dev.flondy.checkyourlove) und diese Website · Stand: {SITE['updated_de']}</p>
 
 <nav class="toc" aria-label="Inhalt"><strong>Inhalt</strong><ol>
 <li><a href="#verantwortlicher">Verantwortlicher</a></li>
@@ -354,7 +354,7 @@ def privacy_de():
 <li><a href="#lokal">Daten auf deinem Gerät</a></li>
 <li><a href="#werbung">Werbung (Google AdMob)</a></li>
 <li><a href="#einwilligung">Einwilligung &amp; Widerruf</a></li>
-<li><a href="#kaeufe">Käufe (Google Play)</a></li>
+<li><a href="#kaeufe">Käufe (Google Play, App Store)</a></li>
 <li><a href="#teilen">Teilen von Ergebnissen</a></li>
 <li><a href="#berechtigungen">Berechtigungen</a></li>
 <li><a href="#kontakt">Kontakt per E-Mail</a></li>
@@ -375,7 +375,7 @@ def privacy_de():
 <li><strong>Namen bleiben lokal:</strong> Die eingegebenen Namen, Ergebnisse, Favoriten und Einstellungen werden nur auf deinem Gerät gespeichert. Wir erhalten sie nicht, und sie werden weder an Werbe- noch an Analysedienste übermittelt.</li>
 <li><strong>Keine Analyse- oder Tracking-Tools:</strong> Die App enthält keine Analyse-, Crash-Reporting- oder Marketing-Tracking-Dienste.</li>
 <li><strong>Werbung:</strong> Die kostenlose Version wird über Google AdMob finanziert. Dabei verarbeitet Google personenbezogene Daten (Abschnitt 4) – nach deiner Auswahl im Einwilligungsdialog.</li>
-<li><strong>Käufe:</strong> Der optionale Premium-Kauf wird vollständig über Google Play abgewickelt (Abschnitt 6).</li>
+<li><strong>Käufe:</strong> Der optionale Premium-Kauf wird vollständig über Google Play bzw. den App Store von Apple abgewickelt (Abschnitt 6).</li>
 </ul>
 
 <h2 id="lokal">3. Daten auf deinem Gerät</h2>
@@ -390,29 +390,31 @@ def privacy_de():
 </table>
 <p>Falls aus einer früheren App-Version noch Daten vorhanden waren, werden diese bei der Aktualisierung unverändert lokal übernommen.</p>
 <p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO (Bereitstellung der von dir genutzten Funktionen) bzw. Art. 6 Abs. 1 lit. f DSGVO; der Zugriff auf den Gerätespeicher ist für die von dir gewünschte Funktion unbedingt erforderlich (§ 25 Abs. 2 Nr. 2 TDDDG).</p>
-<p><strong>Speicherdauer &amp; Löschung:</strong> Die Daten bleiben gespeichert, bis du sie löschst – einzelne Einträge oder den gesamten Verlauf direkt in der App, alle Daten über „App-Daten löschen“ in den Android-Einstellungen oder durch Deinstallation.</p>
-<p><strong>Sicherungen:</strong> Namen, Verlauf und Einstellungen sind von der automatischen Android-Cloud-Sicherung ausgenommen. Bei einer direkten Übertragung von einem alten auf ein neues Gerät können sie mit übertragen werden.</p>
+<p><strong>Speicherdauer &amp; Löschung:</strong> Die Daten bleiben gespeichert, bis du sie löschst – einzelne Einträge oder den gesamten Verlauf direkt in der App, alle Daten über „App-Daten löschen“ in den Android-Einstellungen oder durch Deinstallation der App (Android und iOS).</p>
+<p><strong>Sicherungen:</strong> Namen, Verlauf und Einstellungen sind von der automatischen Android-Cloud-Sicherung ausgenommen. Bei einer direkten Übertragung von einem alten auf ein neues Gerät können sie mit übertragen werden. Auf dem iPhone können sie – wie andere App-Daten – Teil deiner Geräte- bzw. iCloud-Sicherung sein, die du in den iOS-Einstellungen verwaltest; wir haben darauf keinen Zugriff.</p>
 
 <h2 id="werbung">4. Werbung (Google AdMob)</h2>
 <p>In der kostenlosen Version zeigen wir Werbung des Dienstes <strong>Google AdMob</strong> an: ein Banner im Test- und Verlaufsbildschirm, gelegentlich eine Vollbild-Werbung in einer natürlichen Pause (frühestens nach mehreren Tests und mit mehreren Minuten Abstand) sowie – nur wenn du es ausdrücklich auswählst – ein Video mit Belohnung. Mit Premium wird keine Werbung mehr geladen.</p>
 <p><strong>Anbieter:</strong> Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland (für Nutzer im EWR und in der Schweiz).</p>
-<p><strong>Verarbeitete Daten (durch Google):</strong> insbesondere die Werbe-ID deines Geräts, IP-Adresse und daraus abgeleiteter ungefährer Standort, Geräte- und Systeminformationen (z. B. Modell, Android-Version, Sprache), Informationen zur App sowie Interaktionen mit Anzeigen (z. B. Einblendungen, Klicks) und Diagnosedaten.</p>
+<p><strong>Verarbeitete Daten (durch Google):</strong> insbesondere die Werbe-ID deines Geräts, IP-Adresse und daraus abgeleiteter ungefährer Standort, Geräte- und Systeminformationen (z. B. Modell, Android- bzw. iOS-Version, Sprache), Informationen zur App sowie Interaktionen mit Anzeigen (z. B. Einblendungen, Klicks) und Diagnosedaten.</p>
 <p><strong>Zwecke:</strong> Auslieferung und Darstellung von Anzeigen, Begrenzung der Anzeigenhäufigkeit, Messung und Abrechnung, Betrugs- und Missbrauchserkennung sowie – nur mit deiner Einwilligung – personalisierte Werbung.</p>
 <p><strong>Was nicht übermittelt wird:</strong> Die in der App eingegebenen Namen und Ergebnisse werden niemals an Google AdMob übergeben. Die App fordert nur Anzeigen bis zur Altersfreigabe „Teen“ an.</p>
 <p><strong>Rechtsgrundlage:</strong> deine Einwilligung (Art. 6 Abs. 1 lit. a DSGVO, § 25 Abs. 1 TDDDG), soweit Informationen auf deinem Gerät gespeichert oder ausgelesen werden oder Werbung personalisiert wird. Welche Anzeigen geladen werden, richtet sich nach deiner Auswahl im Einwilligungsdialog.</p>
 <p>Weitere Informationen: <a href="https://policies.google.com/privacy" rel="noopener">Datenschutzerklärung von Google</a> · <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">Wie Google Daten aus Apps von Partnern verwendet</a> · <a href="https://adssettings.google.com" rel="noopener">Einstellungen für Werbung bei Google</a>. Die Werbe-ID kannst du in den Android-Einstellungen unter „Datenschutz → Werbung“ zurücksetzen oder löschen.</p>
+<p><strong>iPhone (App Tracking Transparency):</strong> Auf iOS fragt die App nach der Einwilligung zusätzlich über die Systemabfrage von Apple, ob sie die Werbe-ID (IDFA) für personalisierte Werbung nutzen darf. Lehnst du ab, wird die IDFA nicht übermittelt; Google kann dann nur nicht personalisierte bzw. eingeschränkte Werbung ausliefern. Du kannst deine Entscheidung jederzeit in den iOS-Einstellungen unter „Datenschutz &amp; Sicherheit → Tracking“ ändern.</p>
 
 <h2 id="einwilligung">5. Einwilligung &amp; Widerruf</h2>
 <p>Bevor Werbung geladen wird, fragt die App über die <strong>User Messaging Platform von Google</strong> nach deiner Einwilligung, sofern dies für deinen Standort erforderlich ist. Deine Entscheidung wird lokal auf dem Gerät gespeichert.</p>
 <p>Du kannst deine Einwilligung jederzeit mit Wirkung für die Zukunft ändern oder widerrufen: <strong>App → Einstellungen → Datenschutz → „Datenschutzeinstellungen für Werbung“</strong>. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Verarbeitung bleibt unberührt. Die Grundfunktion der App kannst du unabhängig von deiner Entscheidung nutzen.</p>
 
-<h2 id="kaeufe">6. Käufe (Google Play)</h2>
+<h2 id="kaeufe">6. Käufe (Google Play, App Store)</h2>
 <p>Der optionale Premium-Kauf wird über die Abrechnung von <strong>Google Play</strong> abgewickelt. Zahlungsdaten gibst du ausschließlich gegenüber Google an; wir erhalten sie nicht.</p>
 <p>Die App erhält von Google Play lediglich Informationen zum Kauf (z. B. Produkt-ID, Kaufstatus, Kauf-Token, Bestellnummer und Zeitpunkt), um Premium freizuschalten, die Echtheit des Kaufs auf dem Gerät zu prüfen, den Kauf zu bestätigen und ihn nach einer Neuinstallation wiederherzustellen. Diese Informationen werden nicht auf eigenen Servern gespeichert. Erstattete oder widerrufene Käufe werden beim nächsten Abgleich mit Google Play berücksichtigt.</p>
+<p><strong>iPhone:</strong> Auf iOS wird der Kauf über den <strong>App Store von Apple</strong> (Apple Distribution International Ltd., Hollyhill Industrial Estate, Hollyhill, Cork, Irland) abgewickelt. Zahlungsdaten gibst du ausschließlich gegenüber Apple an. Die App erhält über StoreKit nur Informationen zur Transaktion (z. B. Produkt-ID, Transaktions-ID, Kaufdatum, Erstattungsstatus), um Premium freizuschalten und wiederherzustellen. Es gilt die <a href="https://www.apple.com/de/legal/privacy/" rel="noopener">Datenschutzrichtlinie von Apple</a>.</p>
 <p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung). Für die Verarbeitung durch Google gilt die <a href="https://policies.google.com/privacy" rel="noopener">Datenschutzerklärung von Google</a> sowie die <a href="https://payments.google.com/payments/apis-secure/u/0/get_legal_document?ldo=0&amp;ldt=privacynotice" rel="noopener">Datenschutzhinweise von Google Payments</a>.</p>
 
 <h2 id="teilen">7. Teilen von Ergebnissen</h2>
-<p>Wenn du ein Ergebnis teilst, erstellt die App ein Bild mit beiden Namen und dem Ergebnis. Es wird kurzzeitig im temporären Speicher der App abgelegt und über den Android-Teilen-Dialog an die von dir gewählte App übergeben. Für die weitere Verarbeitung ist die jeweilige Ziel-App bzw. deren Anbieter verantwortlich. Bitte teile Namen anderer Personen nur, wenn diese einverstanden sind.</p>
+<p>Wenn du ein Ergebnis teilst, erstellt die App ein Bild mit beiden Namen und dem Ergebnis. Es wird kurzzeitig im temporären Speicher der App abgelegt und über den Teilen-Dialog des Systems (Android bzw. iOS) an die von dir gewählte App übergeben. Für die weitere Verarbeitung ist die jeweilige Ziel-App bzw. deren Anbieter verantwortlich. Bitte teile Namen anderer Personen nur, wenn diese einverstanden sind.</p>
 
 <h2 id="berechtigungen">8. Berechtigungen der App</h2>
 <table>
@@ -422,6 +424,7 @@ def privacy_de():
 <tr><td>Google-Play-Abrechnung</td><td>Premium-Kauf</td></tr>
 <tr><td>Vibration</td><td>optionales haptisches Feedback (abschaltbar)</td></tr>
 </table>
+<p><strong>iPhone:</strong> Auf iOS fragt die App nur nach der Erlaubnis für App Tracking Transparency (siehe Abschnitt 4). Weitere Berechtigungen werden nicht angefordert.</p>
 <p>Die App greift nicht auf Kontakte, Fotos, Kamera, Mikrofon oder den genauen Standort zu.</p>
 
 <h2 id="kontakt">9. Kontakt per E-Mail</h2>
@@ -451,7 +454,7 @@ def privacy_de():
 def privacy_en():
     return f"""
 <h1>Privacy Policy</h1>
-<p class="meta">for the app “Check your Love” (Android, package dev.flondy.checkyourlove) and this website · Last updated: {SITE['updated_en']}</p>
+<p class="meta">for the app “Check your Love” (Android and iOS, dev.flondy.checkyourlove) and this website · Last updated: {SITE['updated_en']}</p>
 <p class="box">This is a translation for convenience. In case of doubt, the <a href="../datenschutz.html" hreflang="de">German version</a> prevails.</p>
 
 <nav class="toc" aria-label="Contents"><strong>Contents</strong><ol>
@@ -460,7 +463,7 @@ def privacy_en():
 <li><a href="#local">Data on your device</a></li>
 <li><a href="#ads">Advertising (Google AdMob)</a></li>
 <li><a href="#consent">Consent &amp; withdrawal</a></li>
-<li><a href="#purchases">Purchases (Google Play)</a></li>
+<li><a href="#purchases">Purchases (Google Play, App Store)</a></li>
 <li><a href="#sharing">Sharing results</a></li>
 <li><a href="#permissions">Permissions</a></li>
 <li><a href="#contact">Contact by email</a></li>
@@ -481,7 +484,7 @@ def privacy_en():
 <li><strong>Names stay local:</strong> The names you enter, results, favourites and settings are stored only on your device. We do not receive them, and they are never sent to advertising or analytics services.</li>
 <li><strong>No analytics or tracking tools:</strong> The app contains no analytics, crash reporting or marketing tracking services.</li>
 <li><strong>Advertising:</strong> The free version is funded by Google AdMob. Google processes personal data for this (section 4) – according to your choice in the consent dialog.</li>
-<li><strong>Purchases:</strong> The optional Premium purchase is handled entirely by Google Play (section 6).</li>
+<li><strong>Purchases:</strong> The optional Premium purchase is handled entirely by Google Play or Apple's App Store (section 6).</li>
 </ul>
 
 <h2 id="local">3. Data on your device</h2>
@@ -496,29 +499,31 @@ def privacy_en():
 </table>
 <p>Any data left from an earlier version of the app is kept locally and unchanged when you update.</p>
 <p><strong>Legal basis:</strong> Art. 6(1)(b) GDPR (providing the features you use) or Art. 6(1)(f) GDPR; access to device storage is strictly necessary for the feature you request (Section 25(2) no. 2 German TDDDG).</p>
-<p><strong>Retention &amp; deletion:</strong> The data remains until you delete it – single entries or the entire history in the app, all data via “Clear app data” in Android settings, or by uninstalling.</p>
-<p><strong>Backups:</strong> Names, history and settings are excluded from automatic Android cloud backup. They may be included when you transfer data directly from an old to a new device.</p>
+<p><strong>Retention &amp; deletion:</strong> The data remains until you delete it – single entries or the entire history in the app, all data via “Clear app data” in Android settings, or by uninstalling the app (Android and iOS).</p>
+<p><strong>Backups:</strong> Names, history and settings are excluded from automatic Android cloud backup. They may be included when you transfer data directly from an old to a new device. On iPhone they may – like other app data – be part of your device or iCloud backup, which you manage in iOS settings; we have no access to it.</p>
 
 <h2 id="ads">4. Advertising (Google AdMob)</h2>
 <p>In the free version we show ads from <strong>Google AdMob</strong>: a banner on the test and history screens, occasionally a full-screen ad at a natural break (only after several tests and several minutes apart) and – only if you explicitly choose it – a rewarded video. With Premium, no ads are loaded.</p>
 <p><strong>Provider:</strong> Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland (for users in the EEA and Switzerland).</p>
-<p><strong>Data processed (by Google):</strong> in particular your device's advertising ID, IP address and approximate location derived from it, device and system information (e.g. model, Android version, language), information about the app, interactions with ads (e.g. impressions, clicks) and diagnostic data.</p>
+<p><strong>Data processed (by Google):</strong> in particular your device's advertising ID, IP address and approximate location derived from it, device and system information (e.g. model, Android or iOS version, language), information about the app, interactions with ads (e.g. impressions, clicks) and diagnostic data.</p>
 <p><strong>Purposes:</strong> serving and displaying ads, frequency capping, measurement and billing, fraud and abuse prevention and – only with your consent – personalised advertising.</p>
 <p><strong>What is not shared:</strong> Names and results entered in the app are never passed to Google AdMob. The app only requests ads rated up to “Teen”.</p>
 <p><strong>Legal basis:</strong> your consent (Art. 6(1)(a) GDPR, Section 25(1) TDDDG) where information is stored on or read from your device or ads are personalised. Which ads are loaded depends on your choice in the consent dialog.</p>
 <p>More information: <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a> · <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">How Google uses information from partner apps</a> · <a href="https://adssettings.google.com" rel="noopener">Google ad settings</a>. You can reset or delete your advertising ID in Android settings under “Privacy → Ads”.</p>
+<p><strong>iPhone (App Tracking Transparency):</strong> On iOS, after the consent dialog the app additionally uses Apple's system prompt to ask whether it may use the advertising identifier (IDFA) for personalised ads. If you decline, the IDFA is not shared; Google can then only serve non-personalised or limited ads. You can change your choice at any time in iOS Settings under “Privacy &amp; Security → Tracking”.</p>
 
 <h2 id="consent">5. Consent &amp; withdrawal</h2>
 <p>Before ads are loaded, the app uses Google's <strong>User Messaging Platform</strong> to ask for your consent where required for your location. Your choice is stored locally on the device.</p>
 <p>You can change or withdraw your consent at any time with effect for the future: <strong>App → Settings → Privacy → “Ad privacy settings”</strong>. Withdrawal does not affect the lawfulness of processing before the withdrawal. You can use the core features regardless of your choice.</p>
 
-<h2 id="purchases">6. Purchases (Google Play)</h2>
+<h2 id="purchases">6. Purchases (Google Play, App Store)</h2>
 <p>The optional Premium purchase is processed via <strong>Google Play</strong> billing. You provide payment details only to Google; we never receive them.</p>
 <p>The app only receives purchase information from Google Play (e.g. product ID, purchase state, purchase token, order number and time) in order to unlock Premium, verify the purchase on the device, acknowledge it and restore it after reinstalling. This information is not stored on our own servers. Refunded or revoked purchases are taken into account at the next sync with Google Play.</p>
+<p><strong>iPhone:</strong> On iOS the purchase is processed by <strong>Apple's App Store</strong> (Apple Distribution International Ltd., Hollyhill Industrial Estate, Hollyhill, Cork, Ireland). You provide payment details only to Apple. Via StoreKit the app only receives transaction information (e.g. product ID, transaction ID, purchase date, refund status) to unlock and restore Premium. <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple's Privacy Policy</a> applies.</p>
 <p><strong>Legal basis:</strong> Art. 6(1)(b) GDPR (performance of a contract). Processing by Google is governed by the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a> and the <a href="https://payments.google.com/payments/apis-secure/u/0/get_legal_document?ldo=0&amp;ldt=privacynotice" rel="noopener">Google Payments Privacy Notice</a>.</p>
 
 <h2 id="sharing">7. Sharing results</h2>
-<p>When you share a result, the app creates an image with both names and the result. It is stored briefly in the app's temporary storage and handed to the app you choose via the Android share sheet. The receiving app and its provider are responsible for any further processing. Please only share other people's names if they agree.</p>
+<p>When you share a result, the app creates an image with both names and the result. It is stored briefly in the app's temporary storage and handed to the app you choose via the system share sheet (Android or iOS). The receiving app and its provider are responsible for any further processing. Please only share other people's names if they agree.</p>
 
 <h2 id="permissions">8. App permissions</h2>
 <table>
@@ -528,6 +533,7 @@ def privacy_en():
 <tr><td>Google Play billing</td><td>Premium purchase</td></tr>
 <tr><td>Vibration</td><td>optional haptic feedback (can be turned off)</td></tr>
 </table>
+<p><strong>iPhone:</strong> On iOS the app only asks for App Tracking Transparency permission (see section 4). No other permissions are requested.</p>
 <p>The app does not access contacts, photos, camera, microphone or precise location.</p>
 
 <h2 id="contact">9. Contact by email</h2>
