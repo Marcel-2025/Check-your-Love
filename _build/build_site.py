@@ -12,8 +12,8 @@ ROOT = Path(__file__).resolve().parents[1]
 
 SITE = {
     # Anbieter/Verantwortlicher
-    "owner_name": "Marcel S. / Flondy",
-    "owner_street": "",
+    "owner_name": "Marcel Single (Flondy Dev.)",
+    "owner_street": "Westenbergstraße 3",
     "owner_city": "88605 Meßkirch",
     "owner_country_de": "Deutschland",
     "owner_country_en": "Germany",
