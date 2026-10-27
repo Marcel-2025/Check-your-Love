@@ -21,7 +21,9 @@ SITE = {
     # Öffentliche Adresse der Website (GitHub Pages)
     "base_url": "https://marcel-2025.github.io/Check-your-Love/",
     # Google-Play-Eintrag. Leer lassen, solange die App noch nicht veröffentlicht ist.
-    "play_url": "",
+    "play_url": "https://play.google.com/store/apps/details?id=dev.flondy.checkyourlove",
+    "ios_url_de": "https://apps.apple.com/de/app/check-your-love-liebestest/id6824271482",
+    "ios_url_en": "https://apps.apple.com/app/id6824271482",
     "updated_de": "18. Oktober 2026",
     "updated_en": "18 October 2026",
 }
@@ -130,8 +132,14 @@ def footer(lang, base):
 def play_button(lang):
     if SITE["play_url"]:
         label = ("Jetzt bei", "Google Play") if lang == "de" else ("Get it on", "Google Play")
+        ios = SITE["ios_url_de"] if lang == "de" else SITE["ios_url_en"]
+        ios_small = "Laden im" if lang == "de" else "Download on the"
+        phone = ('<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" '
+                 'aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="3"/><path d="M10.5 18.5h3"/></svg>')
         return (f'<a class="btn btn-primary" href="{SITE["play_url"]}" rel="noopener">{ICONS["play"]}'
-                f'<span class="stack"><small>{label[0]}</small>{label[1]}</span></a>')
+                f'<span class="stack"><small>{label[0]}</small>{label[1]}</span></a>'
+                f'<a class="btn btn-primary" href="{ios}" rel="noopener">{phone}'
+                f'<span class="stack"><small>{ios_small}</small>App Store</span></a>')
     label = ("Bald bei", "Google Play") if lang == "de" else ("Coming soon to", "Google Play")
     return (f'<span class="btn btn-primary" aria-disabled="true">{ICONS["play"]}'
             f'<span class="stack"><small>{label[0]}</small>{label[1]}</span></span>')
@@ -144,9 +152,9 @@ def play_button(lang):
 T = {
     "de": {
         "title": "Check your Love – der liebevoll gestaltete Liebestest",
-        "desc": "Zwei Namen, ein Herz, ein Ergebnis: Check your Love ist ein hochwertig gestalteter Liebestest für Android – nur zum Spaß, privat und immer gleich für dasselbe Paar.",
+        "desc": "Zwei Namen, ein Herz, ein Ergebnis: Check your Love ist ein hochwertig gestalteter Liebestest für iPhone & Android – nur zum Spaß, privat und immer gleich für dasselbe Paar.",
         "nav": [("#so-gehts", "So geht's", "hide-sm"), ("#funktionen", "Funktionen", "hide-sm"), ("#premium", "Premium", "hide-sm"), ("#faq", "FAQ", "")],
-        "eyebrow": "Liebestest für Android",
+        "eyebrow": "Liebestest für iPhone & Android",
         "h1": "Wie stark ist eure <em>Verbindung?</em>",
         "lead": "Zwei Namen, ein Herz, ein Ergebnis. Check your Love verbindet einen kleinen Moment Spannung mit einem Design, das sich hochwertig anfühlt – verspielt, aber nie kitschig.",
         "more": "Mehr erfahren",
@@ -176,7 +184,7 @@ T = {
         "prem_p": "Die Berechnung und jedes Ergebnis sind kostenlos. Mit dem einmaligen Premium-Kauf unterstützt du die Weiterentwicklung und bekommst:",
         "prem_list": ["Keine Werbung – nie wieder", "4 exklusive Designs: Roségold, Polarlicht, Kirschblüte, Samt",
                       "2 zusätzliche Ergebnisanimationen: Herzregen und Sternenfunkeln", "3 Premium-Vorlagen zum Teilen: Polaroid, Neon, Minimal"],
-        "prem_fair": "Kein Abo, keine versteckten Kosten. Der Preis wird direkt von Google Play angezeigt. Premium verändert nie ein Ergebnis – die Berechnung ist für alle gleich.",
+        "prem_fair": "Kein Abo, keine versteckten Kosten. Der Preis wird direkt von Google Play bzw. dem App Store angezeigt. Premium verändert nie ein Ergebnis – die Berechnung ist für alle gleich.",
         "prem_img": "de-premium-dark.webp", "prem_alt": "App-Ansicht: Premium-Bereich",
         "priv_h": "Deine Namen bleiben bei dir",
         "priv_p": "Check your Love speichert Namen und Verlauf ausschließlich lokal auf deinem Smartphone. Die App wird über Werbung von Google AdMob finanziert – deine eingegebenen Namen werden dabei nie weitergegeben.",
@@ -191,9 +199,9 @@ T = {
     },
     "en": {
         "title": "Check your Love – the beautifully crafted love test",
-        "desc": "Two names, one heart, one result: Check your Love is a beautifully designed love test for Android – just for fun, private and always the same for the same pair.",
+        "desc": "Two names, one heart, one result: Check your Love is a beautifully designed love test for iPhone & Android – just for fun, private and always the same for the same pair.",
         "nav": [("#how", "How it works", "hide-sm"), ("#features", "Features", "hide-sm"), ("#premium", "Premium", "hide-sm"), ("#faq", "FAQ", "")],
-        "eyebrow": "Love test for Android",
+        "eyebrow": "Love test for iPhone & Android",
         "h1": "How strong is your <em>bond?</em>",
         "lead": "Two names, one heart, one result. Check your Love turns a moment of suspense into an experience that feels premium – playful, but never cheesy.",
         "more": "Learn more",
@@ -223,7 +231,7 @@ T = {
         "prem_p": "The calculation and every result are free. With the one-time Premium purchase you support future development and get:",
         "prem_list": ["No ads – ever", "4 exclusive designs: Rosé Gold, Aurora, Cherry Blossom, Velvet",
                       "2 extra result animations: heart rain and starburst", "3 premium share cards: Polaroid, Neon, Minimal"],
-        "prem_fair": "No subscription, no hidden costs. The price is shown directly by Google Play. Premium never changes a result – the calculation is the same for everyone.",
+        "prem_fair": "No subscription, no hidden costs. The price is shown directly by Google Play or the App Store. Premium never changes a result – the calculation is the same for everyone.",
         "prem_img": "de-premium-dark.webp", "prem_alt": "App screen: Premium area",
         "priv_h": "Your names stay with you",
         "priv_p": "Check your Love stores names and history only locally on your phone. The app is funded by ads from Google AdMob – the names you enter are never passed on.",
