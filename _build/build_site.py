@@ -102,11 +102,11 @@ def nav(lang, base, alt_path, links):
 
 def footer(lang, base):
     if lang == "de":
-        links = [(f"{base}datenschutz.html", "Datenschutz"), (f"{base}impressum.html", "Impressum"),
+        links = [(f"{base}datenschutz.html", "Datenschutz"), ("https://flondy.github.io/app-store/impressum.html", "Impressum"),
                  (f"mailto:{SITE['email']}", "Kontakt"), (f"{base}en/", "English")]
         note = "Nur zur Unterhaltung – kein wissenschaftlicher Test."
     else:
-        links = [(f"{base}en/privacy.html", "Privacy"), (f"{base}en/imprint.html", "Imprint"),
+        links = [(f"{base}en/privacy.html", "Privacy"), ("https://flondy.github.io/app-store/impressum.html", "Imprint"),
                  (f"mailto:{SITE['email']}", "Contact"), (f"{base}", "Deutsch")]
         note = "Just for fun – not a scientific test."
     items = "".join(f'<a href="{h}">{t}</a>' for h, t in links)
@@ -611,8 +611,7 @@ def main():
         "en/index.html": landing("en"),
         "datenschutz.html": legal_page("de", "Datenschutzerklärung", privacy_de(), "", "en/privacy.html"),
         "en/privacy.html": legal_page("en", "Privacy Policy", privacy_en(), "../", "../datenschutz.html"),
-        "impressum.html": legal_page("de", "Impressum", imprint("de"), "", "en/imprint.html"),
-        "en/imprint.html": legal_page("en", "Imprint", imprint("en"), "../", "../impressum.html"),
+        # Impressum liegt zentral unter https://flondy.github.io/app-store/impressum.html
     }
     # Englische Startseite: Footer/Links zeigen auf ../
     for path, html in pages.items():
